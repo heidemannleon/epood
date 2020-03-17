@@ -1834,7 +1834,7 @@ td {
 /* Lists */
 #page-container ul li {
 	margin-left: 3em;
-	text-indent: -1.1em;
+	text-indent: 0em;
 	list-style: disc inside;
 }
 
