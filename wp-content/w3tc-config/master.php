@@ -9,7 +9,7 @@
     "dbcache.configuration_overloaded": false,
     "dbcache.debug": false,
     "dbcache.debug_purge": false,
-    "dbcache.enabled": false,
+    "dbcache.enabled": true,
     "dbcache.engine": "file",
     "dbcache.file.gc": 3600,
     "dbcache.file.locking": false,
@@ -58,7 +58,7 @@
         "\\bsql_calc_found_rows\\b",
         "\\bfound_rows\\(\\)"
     ],
-    "lazyload.enabled": false,
+    "lazyload.enabled": true,
     "lazyload.process_img": true,
     "lazyload.process_background": true,
     "lazyload.exclude": [
@@ -87,7 +87,7 @@
     ],
     "lazyload.embed_method": "async_head",
     "objectcache.configuration_overloaded": false,
-    "objectcache.enabled": false,
+    "objectcache.enabled": true,
     "objectcache.debug": false,
     "objectcache.debug_purge": false,
     "objectcache.enabled_for_wp_admin": true,
@@ -130,7 +130,7 @@
     "objectcache.lifetime": 180,
     "objectcache.purge.all": false,
     "pgcache.configuration_overloaded": false,
-    "pgcache.enabled": false,
+    "pgcache.enabled": true,
     "pgcache.comment_cookie_ttl": 1800,
     "pgcache.debug": false,
     "pgcache.debug_purge": false,
@@ -260,7 +260,7 @@
     "stats.access_log.format": "%h %l %u %t \\\"%r\\\" %>s %O \\\"%{Referer}i\\\" \\\"%{User-Agent}i\\\"",
     "stats.access_log.webserver": "apache",
     "minify.configuration_overloaded": false,
-    "minify.enabled": false,
+    "minify.enabled": true,
     "minify.auto": true,
     "minify.debug": false,
     "minify.engine": "file",
@@ -361,7 +361,7 @@
     ],
     "minify.cache.files_regexp": false,
     "cdn.configuration_overloaded": false,
-    "cdn.enabled": false,
+    "cdn.enabled": true,
     "cdn.debug": false,
     "cdn.flush_manually": false,
     "cdn.engine": "stackpath2",
@@ -528,7 +528,9 @@
     "varnish.configuration_overloaded": false,
     "varnish.enabled": false,
     "varnish.debug": false,
-    "varnish.servers": [],
+    "varnish.servers": [
+        ""
+    ],
     "browsercache.configuration_overloaded": false,
     "browsercache.enabled": true,
     "browsercache.rewrite": false,
@@ -885,5 +887,8 @@
     "extensions.active_frontend": [],
     "extensions.active_dropin": [],
     "plugin.license_key": "",
-    "plugin.type": ""
+    "plugin.type": "",
+    "fragmentcache": {
+        "engine": ""
+    }
 }
